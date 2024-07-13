@@ -1,0 +1,81 @@
+.player-list {
+    overflow: hidden;
+    background-color: #ffffcc; /* equivalent to bg-yellow-00 */
+  }
+  
+  .header {
+    font-size: 1.875rem; /* equivalent to text-3xl */
+    font-weight: bold;
+    padding: 1rem; /* equivalent to p-4 */
+    color: #004080; /* equivalent to text-darkBlue */
+    text-align: center;
+  }
+  
+  .player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+    gap: 1rem; /* equivalent to gap-4 */
+    padding: 1rem; /* equivalent to p-4 */
+    height: 90vh; /* equivalent to h-[90vh] */
+    overflow-y: auto;
+  }
+  
+  .player-card {
+    position: relative;
+    border-width: 2px;
+    padding: 0.75rem; /* equivalent to lg:p-5 p-3 */
+    border-radius: 1rem; /* equivalent to rounded-xl */
+    background-color: #f8faff; /* equivalent to bg-[#f8faff] */
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .player-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* equivalent to group-hover:shadow-md */
+    transform: scale(1.05); /* equivalent to group-hover:scale-105 */
+  }
+  
+  .selected {
+    background-color: #004080; /* equivalent to bg-darkBlue */
+    color: #ffffff; /* equivalent to text-white */
+  }
+  
+  .avatar-initials {
+    width: 5rem; /* equivalent to w-20 */
+    height: 5rem; /* equivalent to h-20 */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    background-color: #88c9d3; /* equivalent to bg-[#88c9d3] */
+    color: #05264e; /* equivalent to text-[#05264e] */
+    font-size: 1.5rem; /* equivalent to text-[24px] */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-image {
+    width: 5rem; /* equivalent to w-20 */
+    height: 5rem; /* equivalent to h-20 */
+    object-fit: cover;
+    border-radius: 9999px; /* equivalent to rounded-full */
+    background-color: #d1d5db; /* equivalent to bg-gray-300 */
+  }
+  
+  .player-name {
+    color: #05264e; /* equivalent to text-[#05264e] */
+    font-size: 1.25rem; /* equivalent to lg:text-[20px] */
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .player-name:hover {
+    color: #3c65f5; /* equivalent to group-hover:text-[#3c65f5] */
+  }
+  
+  .player-position {
+    color: #000000; /* equivalent to text-black */
+    font-size: 0.75rem; /* equivalent to text-[12px] */
+    font-weight: 500; /* equivalent to font-medium */
+    transition: all 0.3s ease;
+  }
+  

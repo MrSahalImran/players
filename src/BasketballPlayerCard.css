@@ -1,0 +1,74 @@
+.avatar {
+  width: 4rem; /* Reduce width for mobile view */
+  height: 4rem; /* Reduce height accordingly */
+  border-radius: 9999px; /* equivalent to rounded-full */
+  background-color: #88c9d3;
+  color: #004080; /* assuming darkBlue is #004080 */
+  font-size: 1.75rem; /* equivalent to text-[28px] */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; /* equivalent to mb-4 */
+}
+
+.avatar-image {
+  width: 4rem; /* Reduce width for mobile view */
+  height: 4rem; /* Reduce height accordingly */
+  object-fit: cover; /* equivalent to object-cover */
+  border-radius: 9999px; /* equivalent to rounded-full */
+  margin-bottom: 0.5rem; /* equivalent to mb-2 */
+}
+
+.image-loading {
+  background-color: #d1d5db; /* equivalent to bg-gray-300 */
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* equivalent to animate-pulse */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.header {
+  font-size: 1.875rem; /* equivalent to text-3xl */
+  font-weight: bold;
+  padding: 1rem; /* equivalent to p-4 */
+  color: #004080; /* equivalent to text-darkBlue */
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.player-card {
+    width: 100%; /* Full width on mobile */
+    max-width: 25rem; /* Maximum width on larger screens */
+    padding: 2rem; /* Padding for larger screens */
+    border-width: 2px;
+    border-color: #004080;
+    border-radius: 1rem;
+    overflow-x: hidden;
+  }
+
+.player-info {
+  display: flex;
+  gap: 0.5rem; /* equivalent to gap-2 */
+}
+
+.player-info span {
+  margin-bottom: 0.25rem; /* equivalent to lg:mb-1 */
+}
+
+.player-info span.hidden-md {
+  display: none; /* equivalent to md:inline-block hidden */
+}
+
+@media (min-width: 768px) {
+  .player-info span.hidden-md {
+    display: inline-block;
+  }
+}
