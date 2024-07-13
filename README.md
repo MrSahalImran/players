@@ -16,7 +16,7 @@ This is a simple React application that displays a list of basketball players an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MrSahalImran/player.git
+   git clone https://github.com/MrSahalImran/players.git
    cd player
    ```
 2. Run the following command
